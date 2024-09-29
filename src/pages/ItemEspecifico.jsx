@@ -14,7 +14,7 @@ export default function ItemEspecifico(){
         <div>
             <Link className="btn btn-outline-primary" to={''}>Home</Link>
             <Link className="btn btn-outline-danger" to={'itens'}>Voltar</Link>
-            <Link className="btn btn-outline-success" to={`itens/editarItem/${itemId}`}>Editar Item</Link>
+            <Link className="btn btn-outline-success" to={`editarItem/${itemId}`}>Editar Item</Link>
             <SpecificItemDate item={item}/>
 
         </div>

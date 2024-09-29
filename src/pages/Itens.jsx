@@ -5,7 +5,7 @@ export default function Itens(){
         <div>
             <h1>Esta é a lista de Itens</h1>
             <Link className="btn btn-outline-danger" to={''}>Home</Link>
-            <Link className="btn btn-outline-success" to={'itens/criarItem'}>Criar Novo Item</Link>
+            <Link className="btn btn-outline-success" to={'criarItem'}>Criar Novo Item</Link>
             <ItensList/>
         </div>
     )

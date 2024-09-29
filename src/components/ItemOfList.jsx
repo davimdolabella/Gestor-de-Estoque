@@ -6,7 +6,7 @@ export default function ItemOfList({item}){
         <div className=" d-flex flex-column flex-sm-row gap-3 my-4 align-items-center bg-secondary text-light p-5 rounded justify-content-center">
             <h3>{item.name}</h3>
             <h3>{`R$${parseFloat(item.price).toFixed(2)}`}</h3>
-            <Link className="btn btn-success" to={`itens/${item.id}`}>Detalhes</Link>
+            <Link className="btn btn-success" to={`${item.id}`}>Detalhes</Link>
             <button className="btn btn-danger" onClick={() => DeleteItem(item.id)}>Excluir</button>
         </div>
     )
