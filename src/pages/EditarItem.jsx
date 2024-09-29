@@ -3,8 +3,7 @@ import ItemForm from "../components/ItemForm";
 import { useItemsContext } from "../context/ItensContext";
 
 export default function EditarItem(){
-    const {itens} = useItemsContext()
-    const {EditItem} = useItemsContext()
+    const {itens, EditItem} = useItemsContext()
     const {itemId} = useParams()
     const item = itens.find(item => item.id === parseInt(itemId))
     if (!item) {
@@ -14,7 +13,7 @@ export default function EditarItem(){
         <div>
             <h1>Editar Item {item.name}</h1>
             <ItemForm formFunction={EditItem} id={item.id} initialValues={item}/>
-            <Link className="btn btn-outline-primary" to={''}>Home</Link>
+            <Link className="btn btn-outline-primary" to={'/Gestor-de-Estoque/'}>Home</Link>
         </div>
     )
 }

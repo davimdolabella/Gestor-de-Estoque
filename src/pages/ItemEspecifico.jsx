@@ -13,8 +13,8 @@ export default function ItemEspecifico(){
     return(
         <div>
             <Link className="btn btn-outline-primary" to={''}>Home</Link>
-            <Link className="btn btn-outline-danger" to={'itens'}>Voltar</Link>
-            <Link className="btn btn-outline-success" to={`editarItem/${itemId}`}>Editar Item</Link>
+            <Link className="btn btn-outline-danger" to={'/Gestor-de-Estoque/itens'}>Voltar</Link>
+            <Link className="btn btn-outline-success" to={`/Gestor-de-Estoque/itens/${itemId}/editar`}>Editar Item</Link>
             <SpecificItemDate item={item}/>
 
         </div>

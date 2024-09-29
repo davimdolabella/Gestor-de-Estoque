@@ -6,7 +6,7 @@ export default function Home(){
         <div>
             
             <Dashboard/>
-            <Link className="btn btn-outline-primary" to={'itens'}>Itens</Link>
+            <Link className="btn btn-outline-primary" to={'/Gestor-de-Estoque/itens'}>Itens</Link>
         </div>
     )
 }
