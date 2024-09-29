@@ -7,7 +7,7 @@ export default function CriarItem(){
         <div>
             <h1>Criar Item</h1>
             <ItemForm formFunction={CreateItem}/>
-            <Link className="btn btn-outline-primary" to={'/'}>Home</Link>
+            <Link className="btn btn-outline-primary" to={''}>Home</Link>
         </div>
     )
 }

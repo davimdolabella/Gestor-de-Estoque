@@ -14,7 +14,7 @@ export default function EditarItem(){
         <div>
             <h1>Editar Item {item.name}</h1>
             <ItemForm formFunction={EditItem} id={item.id} initialValues={item}/>
-            <Link className="btn btn-outline-primary" to={'/'}>Home</Link>
+            <Link className="btn btn-outline-primary" to={''}>Home</Link>
         </div>
     )
 }
