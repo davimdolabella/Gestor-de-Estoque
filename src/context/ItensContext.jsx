@@ -19,14 +19,20 @@ export const ItensProvider =({children}) =>{
         })
         setTotal(state => parseInt(state) + parseInt(quantity))  
     }
+
     const DeleteItem = (id) =>{
         const newState = itens.filter(item => (item.id !== id))
+        const total = newState.reduce((acc, item) => acc + item.quantity, 0) 
+        setTotal(parseInt(total))
         setItens(newState)
     }
+
     const EditItem = (id, newItem) =>{
         const newState = itens.map(item => 
             item.id === id ? {...item, ...newItem} : item
         )
+        const total = newState.reduce((acc, item) => acc + item.quantity, 0) 
+        setTotal(parseInt(total))
         setItens(newState)
     }
     return(

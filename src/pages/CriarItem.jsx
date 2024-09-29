@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ItemForm from "../components/ItemForm";
+import ItemForm from "../components/Form/ItemForm";
 import { useItemsContext } from "../context/ItensContext";
 export default function CriarItem(){
     const {CreateItem} = useItemsContext()

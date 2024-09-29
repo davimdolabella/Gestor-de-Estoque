@@ -1,4 +1,4 @@
-import { useItemsContext } from "../context/ItensContext"
+import { useItemsContext } from "../../context/ItensContext"
 import ItemOfList from "./ItemOfList"
 
 export default function ItensList(){

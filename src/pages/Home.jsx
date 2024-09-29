@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Dashboard from "../components/Dashboard";
+import Dashboard from "../components/Dashboard/Dashboard";
 
 export default function Home(){
     return(

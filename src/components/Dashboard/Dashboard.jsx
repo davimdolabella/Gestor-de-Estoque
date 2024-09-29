@@ -1,5 +1,5 @@
-import DashboardItem from "./DashboarItem";
-import { useItemsContext } from "../context/ItensContext";
+import DashboardItem from "./DashboardItem";
+import { useItemsContext } from "../../context/ItensContext";
 import { useState, useEffect } from "react";
 export default function Dashboard(){
     const {itens, CreateItem, total} = useItemsContext()

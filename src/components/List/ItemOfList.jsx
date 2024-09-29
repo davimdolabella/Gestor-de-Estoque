@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { useItemsContext } from "../context/ItensContext"
+import { useItemsContext } from "../../context/ItensContext"
 export default function ItemOfList({item}){
     const {DeleteItem} = useItemsContext()
     return(

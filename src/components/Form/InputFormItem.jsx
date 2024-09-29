@@ -9,6 +9,7 @@ export default function InputFormItem({name, type, id, value, setValue}){
                 name={id}
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
+                required
             />
         </div>
     )

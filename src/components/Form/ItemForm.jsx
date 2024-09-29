@@ -1,17 +1,17 @@
 import { useState } from "react"
-
+import { useNavigate } from "react-router-dom";
 import InputFormItem from "./InputFormItem"
 export default function ItemForm({formFunction, id, initialValues}){
     const [name, setName] = useState(initialValues? initialValues.name : '');
     const [price, setPrice] = useState(initialValues? initialValues.price : 0);
     const [quantity, setQuantity] = useState(initialValues? initialValues.quantity : 0);
     const [description, setDescription] = useState(initialValues? initialValues.description : '');
-
+    const navigate = useNavigate()
     const Submit = (e) =>{
         e.preventDefault()
         const item = {name, price, quantity, description}
         id ? formFunction(id, item) : formFunction(item)
-        
+        navigate('/Gestor-de-Estoque/itens')
     }
     
     return(
