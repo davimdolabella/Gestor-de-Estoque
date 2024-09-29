@@ -9,6 +9,7 @@ import EditarItem from "./pages/EditarItem";
 
 const router = createBrowserRouter([
     {
+        path:'/Gestor-de-Estoque/',
         element: <App/>,
         children: [
             {
