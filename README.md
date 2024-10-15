@@ -1,5 +1,5 @@
 # Gestor de Estoque
-Feito com React
+
 #### Para testar [clique aqui](https://davimdolabella.github.io/Gestor-de-Estoque/)⬅️
 
 ![Captura de tela 2024-09-29 114419](https://github.com/user-attachments/assets/4628cf70-4148-44d4-8a05-ec17942bb48d)
